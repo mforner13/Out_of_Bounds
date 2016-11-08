@@ -85,3 +85,8 @@ p {
 .thumbnail img {
     border-radius: 5%   
 }
+
+.drop-menu {
+	background-color: white;
+	color: black;
+	}

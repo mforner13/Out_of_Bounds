@@ -8,11 +8,13 @@
 		<title>Out of Bounds</title>
 	</head>
 
-	<!--<script>
-  $(document).ready(function(){
-    $("#main_menu").sticky({topSpacing:0});
-  });
-	</script>-->
+	<script>
+  		$(document).ready(function(){
+    		$('.dropdown').hover(function() {
+    			$(this).addClass('drop-menu')
+    		});
+    	});		
+	</script>
 
 	 <body>
     <div class="nav navbar-fixed-top navbar-default">
@@ -20,7 +22,15 @@
         <ul class="pull-left">
           <li><a href="#">Home</a></li>
           <li><a href="#">About us</a></li>
-          <li><a href="#">Chose your price</a></li>
+          <li class="dropdown">
+          	<a href="#">Chose your price</a>
+          	<ul class="dropdown-menu">
+          		<li>0-£250</li>
+          		<li>£250-£500</li>
+          		<li>£500-£750</li>
+          		<li>£750-£1,000</li>
+          	</ul>	
+          </li>
         </ul>
         <ul class="pull-right">
           <li><a href="#">Pick of the week</a></li>
